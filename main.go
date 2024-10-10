@@ -11,6 +11,10 @@ type testInput struct {
 	Input string `json:"input"`
 }
 
+type output struct {
+	Test string `json:"test"`
+}
+
 func main() {
 	fmt.Println("HELLO FROM TEST ACTOR")
 
@@ -27,4 +31,8 @@ func main() {
 	}
 
 	fmt.Println(input.Input)
+
+	a.Output(&output{
+		Test: fmt.Sprintf("Hello from actor! %s", input.Input),
+	})
 }
