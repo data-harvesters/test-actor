@@ -1,0 +1,17 @@
+{
+    "title": "Test Actor input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "input": {
+            "title": "test input",
+            "description": "a test input",
+            "type": "string",
+            "prefill": "top",
+            "editor": "textfield"
+        }
+    },
+    "required": [
+        "input"
+    ]
+}
